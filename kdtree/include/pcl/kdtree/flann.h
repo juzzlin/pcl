@@ -47,6 +47,7 @@
 #  pragma warning(disable: 4267 4244)
 #endif
 
+#define FLANN_USE_CUDA
 #include <flann/flann.hpp>
 
 #if defined _MSC_VER

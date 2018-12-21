@@ -123,7 +123,7 @@ pcl::KdTreeFLANN<PointT, Dist>::setInputCloud (const PointCloudConstPtr &cloud, 
   flann_index_.reset (new FLANNIndex (::flann::Matrix<float> (cloud_.get (), 
                                                               index_mapping_.size (), 
                                                               dim_),
-                                      ::flann::KDTreeSingleIndexParams (15))); // max 15 points/leaf
+                                      ::flann::KDTreeCuda3dIndexParams (15))); // max 15 points/leaf
   flann_index_->buildIndex ();
 }
 
