@@ -53,6 +53,6 @@ if(USE_PROJECT_FOLDERS)
   set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 endif(USE_PROJECT_FOLDERS)
 
-option(BUILD_tools "Useful PCL-based command line tools" ON)
+option(BUILD_tools "Useful PCL-based command line tools" OFF)
 
 option(WITH_DOCS "Build doxygen documentation" OFF)
