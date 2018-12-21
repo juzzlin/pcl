@@ -10,11 +10,11 @@
 # look for shared ones
 
 if(FLANN_USE_STATIC)
-  set(FLANN_RELEASE_NAME flann_cuda_s)
-  set(FLANN_DEBUG_NAME flann_cuda_s-gd)
+  set(FLANN_RELEASE_NAME flann_cpp_s)
+  set(FLANN_DEBUG_NAME flann_cpp_s-gd)
 else(FLANN_USE_STATIC)
-  set(FLANN_RELEASE_NAME flann_cuda)
-  set(FLANN_DEBUG_NAME flann_cuda-gd)
+  set(FLANN_RELEASE_NAME flann_cpp)
+  set(FLANN_DEBUG_NAME flann_cpp-gd)
 endif(FLANN_USE_STATIC)
 
 find_package(PkgConfig QUIET)

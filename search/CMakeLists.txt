@@ -38,7 +38,7 @@ if(build)
     set(LIB_NAME "pcl_${SUBSYS_NAME}")
     include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
     PCL_ADD_LIBRARY("${LIB_NAME}" "${SUBSYS_NAME}" ${srcs} ${incs} ${impl_incs})
-    target_link_libraries("${LIB_NAME}" pcl_common ${FLANN_LIBRARIES} pcl_octree pcl_kdtree)
+    target_link_libraries("${LIB_NAME}" pcl_common ${FLANN_LIBRARIES} ${FLANN_CUDA_LIBRARIES} pcl_octree pcl_kdtree)
     list(APPEND EXT_DEPS flann)
     PCL_MAKE_PKGCONFIG("${LIB_NAME}" "${SUBSYS_NAME}" "${SUBSYS_DESC}" "${SUBSYS_DEPS}" "" "" "" "")
 
